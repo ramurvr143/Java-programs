@@ -25,7 +25,7 @@ public class Iframe {
 		//text.clear();
 		text.sendKeys(Keys.CONTROL+"a");
 		text.sendKeys(Keys.DELETE);
-	    text.sendKeys("I thing i swithch the frame");
+	    text.sendKeys("I thing i switch the frame");
 		Thread.sleep(2000);
 		
 		driver.switchTo().defaultContent();

@@ -22,7 +22,7 @@ public class Interviewquestions {
 
         // Set Chrome options, including maximizing the window
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximized");
+        options.addArguments("--start-maximized--");
         options.setExperimentalOption("prefs", prefs);
 
     	WebDriver driver = new ChromeDriver(); 

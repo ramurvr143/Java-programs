@@ -11,9 +11,9 @@ public class Countcharacters {
 	        HashSet<Character> nodup = new HashSet<>();
 	        for(char c : str.toCharArray()){
 	        	
-	        	nodup.add(c);
+	        	if(nodup.add(c)) {
 	        	System.out.print(c);
-	        	
+	        	}
 	        }
 	        System.out.println("\n" +nodup.size());
 	        
