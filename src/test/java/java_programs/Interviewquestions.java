@@ -4,6 +4,7 @@ package java_programs;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,10 +23,11 @@ public class Interviewquestions {
 
         // Set Chrome options, including maximizing the window
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximized--");
+        options.addArguments("--start-maximized");
         options.setExperimentalOption("prefs", prefs);
-
-    	WebDriver driver = new ChromeDriver(); 
+      //  ChromeOptions options = new ChromeOptions();
+        options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+    	WebDriver driver = new ChromeDriver(options); 
     	
         try {
             driver.get("https://demo.automationtesting.in/FileDownload.html");

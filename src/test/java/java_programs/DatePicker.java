@@ -13,9 +13,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class DatePicker {
 
 	public static void main(String[] args) throws InterruptedException {
-		WebDriver driver = new ChromeDriver();
+	/*	WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+		
 		
 		driver.get("https://mytravel.org.in/");
 		
@@ -34,13 +35,20 @@ public class DatePicker {
 			}
 			else {
 				driver.findElement(By.className("dp_next")).click();
-			}
-			
+			}*/
+		String a ="ramu";
+		String b= "ramu";
+		if(a==b){
+			System.out.println("equal");
+		}else
+			System.out.println("not equal");
+		
+		
 		}
 		
-		driver.close();
+		//driver.close();
 	}
 	
 	
 
-}
+

@@ -12,6 +12,7 @@ public class Countcharacters {
 	        for(char c : str.toCharArray()){
 	        	
 	        	if(nodup.add(c)) {
+	        		
 	        	System.out.print(c);
 	        	}
 	        }
